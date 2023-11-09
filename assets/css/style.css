@@ -1,1 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700");
+.carousel-caption {
+  max-width: 100%;
+  width: 100%;
+  left: 0;
+}
+.carousel .carousel-indicators2 button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
