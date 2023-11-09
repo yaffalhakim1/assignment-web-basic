@@ -9,3 +9,9 @@
   height: 10px;
   border-radius: 100%;
 }
+.footer {
+  /* background: linear-gradient(105deg, #6e99e6, #093c94); */
+  /* background: #093c94; */
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
