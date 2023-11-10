@@ -66,14 +66,37 @@
         crossorigin="anonymous"></script>
 
     <script>
-        const balance = document.getElementById("balance");
         const addMoney = document.getElementById("add-money");
         const lessMoney = document.getElementById("minus-money");
         const history = document.getElementById("history");
         const tracker = document.getElementById("tracker");
         const text = document.getElementById("text");
         const amount = document.getElementById("amount");
-        const notification = document.getElementById("notification");
+        const balance = document.getElementById("balance");
+
+
+        function createTransaction(e) {
+            e.preventDefault();
+
+            const transaction = {
+                text: text.value,
+                amount: +amount.value,
+            }
+
+        }
+
+
+        //localstorage
+        const transtoLocalStorage = JSON.parse(
+            localStorage.getItem("transactions")
+        );
+
+        let trans = transtoLocalStorage !== null ? transtoLocalStorage : [];
+
+        function useLocalStorage() {
+            localStorage.setItem("transactions", JSON.stringify(transactions));
+        }
+
 
 
 
