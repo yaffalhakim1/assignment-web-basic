@@ -52,9 +52,9 @@
                 <button type="submit" class="btn btn-dark w-100 py-2">Add transaction</button>
             </form>
         </div>
-        <!-- <div class="notification-container" id="notification">
+        <div class="" id="notification">
             <p>Please add a description and amount</p>
-        </div> -->
+        </div>
     </div>
 
 
@@ -73,6 +73,7 @@
         const text = document.getElementById("text");
         const amount = document.getElementById("amount");
         const balance = document.getElementById("balance");
+        const notification = document.getElementById("notification");
 
         //localstorage
         const transtoLocalStorage = JSON.parse(
@@ -143,6 +144,14 @@
             updateView();
 
         }
+
+        function notifUser() {
+            notification.classList.add("show");
+            setTimeout(() => {
+                notification.classList.remove("show");
+            }, 2000);
+        }
+
 
         start();
         tracker.addEventListener("submit", createTransaction);
