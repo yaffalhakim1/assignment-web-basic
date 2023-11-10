@@ -97,6 +97,11 @@
             list.appendChild(item);
         }
 
+        function removeTransaction(id) {
+            trans = trans.filter((transaction) => transaction.id !== id);
+            useLocalStorage();
+        }
+
 
         function createTransaction(e) {
             e.preventDefault();
@@ -106,8 +111,9 @@
                 text: text.value,
                 amount: +amount.value,
             }
-            trans.push(transaction)
+            trans.push(transaction);
             useLocalStorage();
+            addTranstoView(transaction)
             text.value = "";
             amount.value = "";
 
@@ -117,7 +123,7 @@
 
 
 
-
+        tracker.addEventListener("submit", addTransaction);
 
     </script>
 </body>
