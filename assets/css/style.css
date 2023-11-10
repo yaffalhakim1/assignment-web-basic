@@ -83,3 +83,11 @@
   padding: 0;
   margin-bottom: 40px;
 }
+
+.notif.show {
+  opacity: 1;
+}
+
+.notif p {
+  margin: 0;
+}
