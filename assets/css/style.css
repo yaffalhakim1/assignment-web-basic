@@ -20,3 +20,16 @@
 
 }
  */
+
+.nav-pills .nav-item .nav-link {
+  /* color: #0080ff; */
+  margin-right: 7px;
+  border: 1px solid gray;
+  border-radius: 0px;
+}
+
+.nav-pills .nav-item .nav-link.active {
+  background-color: #d3d3d3;
+
+  color: #0080ff;
+}
