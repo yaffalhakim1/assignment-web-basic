@@ -91,3 +91,14 @@
 .notif p {
   margin: 0;
 }
+
+.alert.show {
+  opacity: 1;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
