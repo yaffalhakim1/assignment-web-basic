@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700");
+
+:root {
+  --plus-color: #2ecc71;
+  --minus-color: #c0392b;
+}
 .carousel-caption {
   max-width: 100%;
   width: 100%;
@@ -51,4 +56,30 @@
   .onmobile {
     width: 100%;
   }
+}
+
+.income > div:first-of-type {
+  border-right: 1px solid black;
+}
+
+.history li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.history li.plus {
+  border-right: 5px solid var(--plus-color);
+}
+
+.history li.minus {
+  border-right: 5px solid var(--minus-color);
+}
+
+.history {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
 }
